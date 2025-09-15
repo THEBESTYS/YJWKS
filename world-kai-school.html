@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World K-AI School</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 추진 일정 스타일 개선 */
+        .schedule {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .schedule-item {
+            display: flex;
+            align-items: flex-start;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .schedule-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .schedule-date {
+            background: linear-gradient(135deg, #e63946, #9d174d);
+            color: white;
+            padding: 1.5rem;
+            min-width: 180px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .schedule-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .schedule-content h3 {
+            margin-top: 0;
+            color: #1d3557;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .schedule-content p {
+            color: #64748b;
+            margin: 0;
+        }
+        
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .schedule-item {
+                flex-direction: column;
+            }
+            
+            .schedule-date {
+                min-width: 100%;
+                padding: 1rem;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        /* 아이콘 추가 */
+        .schedule-item:nth-child(1) .schedule-date::before {
+            content: "📋 ";
+        }
+        
+        .schedule-item:nth-child(2) .schedule-date::before {
+            content: "🎓 ";
+        }
+        
+        .schedule-item:nth-child(3) .schedule-date::before {
+            content: "🎉 ";
+        }
+        
+        .schedule-item:nth-child(4) .schedule-date::before {
+            content: "🌍 ";
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -160,24 +246,28 @@
                         <div class="schedule-date">2025.10 ~ 2026.03</div>
                         <div class="schedule-content">
                             <h3>공동 기획 및 커리큘럼 연구</h3>
+                            <p>모든 참여 기관이 함께하는 협업 체계 구축 및 교육 과정 개발</p>
                         </div>
                     </div>
                     <div class="schedule-item">
                         <div class="schedule-date">2026.04</div>
                         <div class="schedule-content">
                             <h3>K-아티스트 교육 과정 개시</h3>
+                            <p>첫 번째 K-아티스트 양성 프로그램 정식 시작</p>
                         </div>
                     </div>
                     <div class="schedule-item">
                         <div class="schedule-date">2026.08</div>
                         <div class="schedule-content">
                             <h3>World K-AI School 공식 출범 + 글로벌 네트워킹 페스티벌 개최</h3>
+                            <p>공식 론칭 행사 및 국제적 네트워킹 기회 제공</p>
                         </div>
                     </div>
                     <div class="schedule-item">
                         <div class="schedule-date">2027~</div>
                         <div class="schedule-content">
                             <h3>세종학당 글로벌 거점 88개국 확장</h3>
+                            <p>전 세계적으로 K-AI 교육 네트워크 확대</p>
                         </div>
                     </div>
                 </div>
