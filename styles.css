@@ -184,77 +184,86 @@ body {
 }
 
 /* 타임라인 */
-.timeline, .schedule {
+/* 타임라인 스타일 개선 */
+.timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    padding-left: 20px;
 }
 
-.timeline::before, .schedule::before {
+.timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background-color: #e63946;
-    transform: translateX(-50%);
-}
-
-.timeline-item, .schedule-item {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-    position: relative;
-    margin-bottom: 2rem;
-    width: 50%;
-}
-
-.timeline-item:nth-child(even), .schedule-item:nth-child(even) {
-    align-self: flex-end;
-    justify-content: flex-start;
-    padding-left: 30px;
-    padding-right: 0;
-    left: 50%;
-}
-
-.timeline-date, .schedule-date {
-    position: absolute;
+    left: 0;
     top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #e63946, #457b9d);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background-color: #e63946;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #e63946;
+}
+
+.timeline-date {
     font-weight: bold;
+    color: #e63946;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
 }
 
-.timeline-item .timeline-date {
-    right: -80px;
-}
-
-.timeline-item:nth-child(even) .timeline-date {
-    left: -80px;
-}
-
-.schedule-item .schedule-date {
-    right: -100px;
-}
-
-.schedule-item:nth-child(even) .schedule-date {
-    left: -100px;
-}
-
-.timeline-content, .schedule-content {
+.timeline-content {
     background: white;
-    padding: 1.5rem;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-content h3, .schedule-content h3 {
+.timeline-content h3 {
+    margin-top: 0;
     color: #1d3557;
-    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
+
+/* 반응형 타임라인 */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 25px;
+    }
+    
+    .timeline-item::before {
+        left: -6px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+}
+
 
 /* 효과 목록 */
 .effect-list {
@@ -317,28 +326,82 @@ footer a:hover {
     .two-column {
         grid-template-columns: 1fr;
     }
-    
-    .timeline::before, .schedule::before {
-        left: 20px;
+/* 타임라인 스타일 개선 */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #e63946, #457b9d);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e63946;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px #e63946;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #1d3557;
+    border-bottom: 2px solid #a8dadc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* 반응형 타임라인 */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 15px;
     }
     
-    .timeline-item, .schedule-item {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 0;
+    .timeline-item {
+        padding-left: 25px;
     }
     
-    .timeline-item:nth-child(even), .schedule-item:nth-child(even) {
-        left: 0;
+    .timeline-item::before {
+        left: -6px;
+        width: 16px;
+        height: 16px;
     }
     
-    .timeline-item .timeline-date, .timeline-item:nth-child(even) .timeline-date {
-        left: -30px;
-        right: auto;
-    }
-    
-    .schedule-item .schedule-date, .schedule-item:nth-child(even) .schedule-date {
-        left: -50px;
-        right: auto;
+    .timeline-content {
+        padding: 15px;
     }
 }
