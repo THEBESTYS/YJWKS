@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World K-AI School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1><a href="index.html">YJ K-문화 허브</a></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yj-kculture-lab.html" class="nav-link">YJ K-컬처 랩</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="world-kai-school.html" class="nav-link active">World K-AI School</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sub-hero">
+            <div class="container">
+                <h1>World K-AI School</h1>
+                <p>AI + 문화예술 + 글로벌 경험 융합을 통한 K-아티스트 양성 플랫폼</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>기획 배경</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>AI 경영 시대 도래</h3>
+                        <p>디지털 전환(DX)을 넘어, 고객 경험·창의성 중심의 <strong>AX(Agile Transformation)</strong> 시대 진입</p>
+                        <p>예술·문화·교육 영역에서 AI와 창의적 역량 융합이 새로운 패러다임으로 부상</p>
+                    </div>
+                    <div class="column">
+                        <h3>글로벌 K-컬처 확산</h3>
+                        <p>K-Pop, K-Drama, K-뷰티, K-푸드 등으로 확장된 한류는 이미 세계적 브랜드 자산</p>
+                        <p>다음 단계는 <strong>AI·문화·융합형 아티스트(K-Artist)</strong> 양성을 통한 지속가능 성장</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>프로젝트 목표</h2>
+                <div class="goal-grid">
+                    <div class="goal-card">
+                        <h3>플랫폼 구축</h3>
+                        <p>K-아티스트 양성 플랫폼 구축: AI + 문화예술 + 글로벌 경험 융합</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>커리큘럼 개발</h3>
+                        <p>세계적 표준 커리큘럼 개발: K-컬처 기반 창의예술·AI 융합 교육</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>네트워크 확장</h3>
+                        <p>글로벌 네트워크 확장: 세종학당재단, 해외 대학, 글로벌 문화기관 연계</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>수익 모델</h3>
+                        <p>수익·지속성 확보: 교육, 콘텐츠 제작, 글로벌 페스티벌, NFT·IP 비즈니스 모델</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>추진 전략</h2>
+                
+                <h3>교육 연구 모델</h3>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <h4>AI 기반 창작 혼합</h4>
+                        <ul>
+                            <li>생성형 AI 활용 영상·안무 제작 혼합</li>
+                            <li>'AI-Assistant Artist' 프로그램 운영</li>
+                        </ul>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>K-컬처 기반 융합 교육</h4>
+                        <ul>
+                            <li>음악·무용·연기·미디어아트 + K-푸드, K-뷰티, K-스포츠 융합형 과정 설계</li>
+                        </ul>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>학문·실무 결합형 연구</h4>
+                        <ul>
+                            <li>연세대 현대문화예술연구원의 이론 연구</li>
+                            <li>에듀포레의 AI·에듀테크 기반 실무 적용</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>인재 양성 단계</h3>
+                <div class="talent-grid">
+                    <div class="talent-card">
+                        <h4>Seed 단계</h4>
+                        <p>중·고교생 대상 AI·창의 체험 캠프</p>
+                    </div>
+                    <div class="talent-card">
+                        <h4>Grow 단계</h4>
+                        <p>대학생·청년 대상 전문 과정, 국제 교환 프로그램</p>
+                    </div>
+                    <div class="talent-card">
+                        <h4>Bloom 단계</h4>
+                        <p>K-아티스트 인증·공연·글로벌 진출</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section bg-light">
+            <div class="container">
+                <h2>기대 성과</h2>
+                <div class="result-grid">
+                    <div class="result-card">
+                        <h3>문화·산업적 성과</h3>
+                        <ul>
+                            <li>K-아티스트 육성을 통한 글로벌 문화산업 경쟁력 강화</li>
+                            <li>K-컬처 3.0 (AI 융합형 K-라이프스타일 산업) 실현</li>
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h3>학문적 성과</h3>
+                        <ul>
+                            <li>AI 기반 예술교육 연구모델 창출</li>
+                            <li>세계 최초 "K-아티스트 학계" 정립</li>
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h3>경제적 성과</h3>
+                        <ul>
+                            <li>교육·콘텐츠·공연 NFT+IP 기반 연간 3,000억 원 이상 부가가치 창출 가능</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>향후 추진 일정</h2>
+                <div class="schedule">
+                    <div class="schedule-item">
+                        <div class="schedule-date">2025.10 ~ 2026.03</div>
+                        <div class="schedule-content">
+                            <h3>공동 기획 및 커리큘럼 연구</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-date">2026.04</div>
+                        <div class="schedule-content">
+                            <h3>K-아티스트 교육 과정 개시</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-date">2026.08</div>
+                        <div class="schedule-content">
+                            <h3>World K-AI School 공식 출범 + 글로벌 네트워킹 페스티벌 개최</h3>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-date">2027~</div>
+                        <div class="schedule-content">
+                            <h3>세종학당 글로벌 거점 88개국 확장</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YJ K-문화 허브. All rights reserved.</p>
+            <a href="index.html">← 메인 페이지로 돌아가기</a>
+        </div>
+    </footer>
+</body>
+</html>
