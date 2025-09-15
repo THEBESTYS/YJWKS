@@ -1,0 +1,344 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-logo h1 {
+    color: #e63946;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #e63946;
+}
+
+/* 히어로 섹션 */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placeholder.com/1920x1080') center/cover no-repeat;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #e63946;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c1121f;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* 서브 히어로 */
+.sub-hero {
+    background-color: #f1faee;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.sub-hero h1 {
+    color: #1d3557;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.sub-hero p {
+    font-size: 1.2rem;
+    color: #457b9d;
+}
+
+/* 콘텐츠 섹션 */
+.content-section {
+    padding: 4rem 0;
+}
+
+.content-section h2 {
+    color: #1d3557;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* 두 열 레이아웃 */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* 카드 그리드 */
+.overview-grid, .partners-grid, .space-grid, .goal-grid, .strategy-grid, .talent-grid, .result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.overview-card, .partner-card, .space-card, .goal-card, .strategy-card, .talent-card, .result-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.overview-card:hover, .partner-card:hover, .space-card:hover, .goal-card:hover, .strategy-card:hover, .talent-card:hover, .result-card:hover {
+    transform: translateY(-5px);
+}
+
+.overview-card h3, .partner-card h3, .space-card h3, .goal-card h3, .strategy-card h4, .talent-card h4, .result-card h3 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+/* 타임라인 */
+.timeline, .schedule {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before, .schedule::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #e63946;
+    transform: translateX(-50%);
+}
+
+.timeline-item, .schedule-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.timeline-item:nth-child(even), .schedule-item:nth-child(even) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+    left: 50%;
+}
+
+.timeline-date, .schedule-date {
+    position: absolute;
+    top: 0;
+    background-color: #e63946;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.timeline-item .timeline-date {
+    right: -80px;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: -80px;
+}
+
+.schedule-item .schedule-date {
+    right: -100px;
+}
+
+.schedule-item:nth-child(even) .schedule-date {
+    left: -100px;
+}
+
+.timeline-content, .schedule-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.timeline-content h3, .schedule-content h3 {
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+/* 효과 목록 */
+.effect-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.effect-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-left: 4px solid #e63946;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 푸터 */
+footer {
+    background-color: #1d3557;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #a8dadc;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .nav-menu {
+        margin-top: 1rem;
+    }
+    
+    .nav-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before, .schedule::before {
+        left: 20px;
+    }
+    
+    .timeline-item, .schedule-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even), .schedule-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item .timeline-date, .timeline-item:nth-child(even) .timeline-date {
+        left: -30px;
+        right: auto;
+    }
+    
+    .schedule-item .schedule-date, .schedule-item:nth-child(even) .schedule-date {
+        left: -50px;
+        right: auto;
+    }
+}
